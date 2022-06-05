@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OpenClose
 {
@@ -16,7 +12,6 @@ namespace OpenClose
     {
         public virtual void Render()
         {
-
         }
     }
 
@@ -24,17 +19,19 @@ namespace OpenClose
     {
         public int Radius { get; set; }
         public Point Center { get; set; }
+
         public override void Render()
         {
             Console.WriteLine("Render Circle");
         }
     }
 
-    class Rectangle : Shape
+    internal class Rectangle : Shape
     {
         public int Width { get; set; }
         public int Height { get; set; }
         public Point TopLeft { get; set; }
+
         public override void Render()
         {
             Console.WriteLine("Render Rectangle");

@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InterfaceSegregation
 {
-    class Cannon : IPrinter, IFax
+    internal class Cannon : IPrinter, IFax
     {
         public void Fax(string content)
         {

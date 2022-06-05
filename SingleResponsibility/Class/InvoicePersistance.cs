@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SingleResponsibility
+﻿namespace SingleResponsibility.Class
 {
-    class InvoicePersistance
+    internal class InvoicePersistance
     {
         private Invoice _invoice;
         private IInvoiceSaver _invoiceSaver;
@@ -21,6 +15,5 @@ namespace SingleResponsibility
         {
             _invoiceSaver.Save(_invoice);
         }
-
     }
 }

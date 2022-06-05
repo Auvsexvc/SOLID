@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DependencyInversion
+﻿namespace DependencyInversion
 {
     public class AuthenticationManager
     {
@@ -17,7 +11,7 @@ namespace DependencyInversion
 
         public void Authenticate(User user, string email, string password)
         {
-            if(user.Email==email && user.Password == password)
+            if (user.Email == email && user.Password == password)
             {
                 emailNotification.SendNotification(user);
             }

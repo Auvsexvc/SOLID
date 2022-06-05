@@ -1,4 +1,4 @@
-﻿namespace SingleResponsibility
+﻿namespace SingleResponsibility.Class
 {
     public interface IInvoiceSaver
     {

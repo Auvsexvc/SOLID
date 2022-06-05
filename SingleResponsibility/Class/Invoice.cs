@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace SingleResponsibility
+namespace SingleResponsibility.Class
 {
     public class Invoice
     {
@@ -18,7 +14,7 @@ namespace SingleResponsibility
             LineItems = lineItems;
             Vendor = vendor;
             Vendee = vendee;
-            Total = this.CalculateTotal();
+            Total = CalculateTotal();
         }
 
         private float CalculateTotal()

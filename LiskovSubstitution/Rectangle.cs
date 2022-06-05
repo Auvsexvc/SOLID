@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LiskovSubstitution
+﻿namespace LiskovSubstitution
 {
     public class Rectangle
     {
@@ -15,6 +9,7 @@ namespace LiskovSubstitution
         {
             _height = height;
         }
+
         public virtual void SetWidth(int width)
         {
             _width = width;

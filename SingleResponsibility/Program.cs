@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LiskovSubstitution
+namespace SingleResponsibility
 {
     internal class Program
     {
